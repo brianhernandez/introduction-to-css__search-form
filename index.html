@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="search.css">
 </head>
 <body>
-	<form action="search.html" method="post">
+	<form action="search.html" method="post" id="searchform">
 		<h1>Search Form</h1>
 
 		<fieldset>
@@ -18,7 +18,7 @@
 
                   <label for="selectpara">Search Parameters</label>
                   <select name="" id="selectpara">
-                  	<option selected="true" disabled="true" >Refine Search by Star System Type. . . </option>
+                  	<option selected="true" disabled="true">Refine Search by Star System Type. . . </option>
                   	<option value="all">All Systems</option>
                   	<option value="main">Main Sequence Systems</option>
                   	<option value="dwarfs">White Dwarf Systems</option>
@@ -30,12 +30,14 @@
                   		<option value="black_star">Star & Black Hole Systems</option>
                   	</optgroup>
                   </select>
-                  <button type="submit">Search</button>
+                  <button id="submit" type="submit">Search</button>
 		</fieldset>
 	</form>
       <ul class="navigation">
             <li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/forms.html">Form Projects Homepage</a></li>
             <li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/">Projects Homepage</a></li>
       </ul>
+      <script type="text/javascript" src="validator.js"></script>
+      <script type="text/javascript" src="search-validate.js"></script>
 </body>
 </html>
